@@ -8,6 +8,7 @@
 int main(int argc, char *argv[]) {
     carregar_tarefas();
     
+
     if (argc < 2) {
         show_help();
         return 0;
@@ -19,8 +20,8 @@ int main(int argc, char *argv[]) {
     if (strcmp(argv[1], "view") == 0) {
         view_tasks();
     } 
-    else if (strcmp(argv[1], "add") == 0) {
-        add_task();
+    else if (strcmp(argv[1], "add") == 0) { // argv[2] é o atributo da função chamada
+        add_task(argv[2]);
     } 
     else if (strcmp(argv[1], "remove") == 0) {
         remove_task();

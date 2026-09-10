@@ -3,7 +3,7 @@
 
 /* ===== COMANDOS DE TAREFA ===== */
 void view_tasks(void);
-void add_task(void);
+void add_task(char nome[32]);
 void remove_task(void);
 void complete_task(void);
 void edit_task(void);
