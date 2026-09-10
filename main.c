@@ -16,19 +16,19 @@ int main(int argc, char *argv[]) {
     /* usa strcmp para comparação de strings
     strcmp, ou string compare, retorna 0
     caso as duas strings na função sejam iguais. */
-    if (strcmp(argv[1], "view-tasks") == 0) {
+    if (strcmp(argv[1], "view") == 0) {
         view_tasks();
     } 
-    else if (strcmp(argv[1], "add-task") == 0) {
+    else if (strcmp(argv[1], "add") == 0) {
         add_task();
     } 
-    else if (strcmp(argv[1], "remove-task") == 0) {
+    else if (strcmp(argv[1], "remove") == 0) {
         remove_task();
     } 
-    else if (strcmp(argv[1], "complete-task") == 0) {
+    else if (strcmp(argv[1], "complete") == 0) {
         complete_task();
     } 
-    else if (strcmp(argv[1], "edit-task") == 0) {
+    else if (strcmp(argv[1], "edit") == 0) {
         edit_task();
     } 
     else if (strcmp(argv[1], "help") == 0 || strcmp(argv[1], "--help") == 0) {
